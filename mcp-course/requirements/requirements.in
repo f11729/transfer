@@ -1,0 +1,9 @@
+ipykernel
+httpx
+mcp[cli]
+openai-agents
+anthropic
+python-dotenv
+pandas
+claude-agent-sdk
+arxiv
