@@ -9,7 +9,7 @@ command on its own line.
 
 Here are the available low-level commands that you can respond with:
 CREATE_FILE filename - Creates a new file at the specified file path
-CREATE_DIR directory_name - Creates a new empty directory
+CREATE_DIRECTORY directory_name - Creates a new empty directory
 APPEND_TO_FILE filename content - Adds the specified content to the end of the file
 """
 
@@ -71,7 +71,7 @@ messages = [{
 print('Processing instructions...')
 
 response = requests.post('http://localhost:11434/api/chat', json={
-    "model": "llama3.2",
+    "model": "llama4",
     "stream": False,
     "messages": messages,
 })
