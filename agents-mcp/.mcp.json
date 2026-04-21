@@ -1,0 +1,44 @@
+{
+  "mcpServers": {
+    "perforce-p4-mcp": {
+      "command": "/local/mnt/workspace/mcp/p4-mcp-server/p4-mcp-server",
+      "args": ["--readonly", "--allow-usage"],
+      "env": {
+        "P4PORT": "ssl:10.43.108.69:1666",
+        "P4USER": "aseah"
+      }
+    },
+    "clearcase-mcp": {
+      "type": "stdio",
+      "command": "/local/mnt/workspace/ccenv/bin/uv",
+      "args": [
+        "run",
+        "/pkg/qct/software/python/sles12/3.13.0/bin/mcp",
+        "run",
+        "/local/mnt/workspace/ccenv/clearcase-mcp.py"
+      ]
+    },
+    "clearcase-agent-mcp": {
+      "type": "stdio",
+      "command": "/pkg/qct/software/python/sles12/3.13.0/bin/python3",
+      "args": [
+        "/local/mnt/workspace/mcp/clearcase-agent-mcp/server.py"
+      ],
+      "env": {
+        "PYTHONPATH": "/local/mnt/workspace/mcp/clearcase-agent-mcp"
+      }
+    },
+    "p4-agent-mcp": {
+      "type": "stdio",
+      "command": "/pkg/qct/software/python/sles12/3.13.0/bin/python3",
+      "args": [
+        "/local/mnt/workspace/mcp/p4-agent-mcp/server.py"
+      ],
+      "env": {
+        "PYTHONPATH": "/local/mnt/workspace/mcp/p4-agent-mcp",
+        "P4PORT": "ssl:10.43.108.69:1666",
+        "P4USER": "aseah"
+      }
+    }
+  }
+}

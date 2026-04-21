@@ -1,0 +1,14 @@
+[project]
+name = "p4-agent-mcp"
+version = "1.0.0"
+description = "Perforce Admin SME AI Agent exposed as an MCP server"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp[cli]>=1.27.0",
+    "openai>=1.30.0",
+    "pydantic>=2.13.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
