@@ -1,0 +1,129 @@
+![GitHub](https://img.shields.io/github/license/DataForScience/LangChain)
+[![Twitter @data4sci](https://img.shields.io/twitter/follow/data4sci)](https://twitter.com/intent/follow?screen_name=data4sci)
+![GitHub top language](https://img.shields.io/github/languages/top/DataForScience/LangChain)
+![GitHub repo size](https://img.shields.io/github/repo-size/DataForScience/LangChain)
+![GitHub last commit](https://img.shields.io/github/last-commit/DataForScience/LangChain)
+
+[![Graphs For Science](https://img.shields.io/badge/Graphs_For_Science-Subscribe-blue)](https://graphs4sci.substack.com/)
+	[![Data Science Briefing](https://img.shields.io/badge/Sunday_Briefing-Subscribe-blue)](https://data4science.ck.page/a63d4cc8d9)
+
+
+# LangChain for Generative AI Pipelines
+
+### Code and slides to accompany the online series of webinars: https://data4sci.com/langchain by Data For Science.
+
+
+LangChain is the state-of-the-art framework for developing Large Language Model (LLM) based applications. It provides a wide range of Lego-like components to streamline the integration of various LLM functionalities into functional pipelines without requiring in-depth expertise in ML.
+
+In this course, students will get an in-depth view of the structure of LangChain and its various components. You will learn how to apply these components to Information Retrieval and the development of chatbots. An overview of the pros and cons of LLMs from OpenAI, HuggingFace, and Anthropic, as well as a primer on Prompt Engineering, will also be provided to empower students to make the best use possible of the capabilities that LangChain puts at their fingertips.
+
+## Schedule
+### 1.Generative AI
+- Overview of Generative Models
+- Comparison of GPT to other LLMs
+- Text to Image Models
+
+### 2. LangChain
+- LangChain structure
+- Understanding Chains
+- Exploring Agents
+- Using tools to interact with the world
+
+### 3. Information Processing
+- Understanding Text Summarization
+- Information Extraction Applications
+- Developing a Question Answering
+
+### 4. Chatbots
+- Information Retrieval and Vectors
+- Retrievers in LangChain
+- Implementing a simple Chatbot
+
+### 5. Prompt Engineering
+- Overview of Prompt Engineering Techniques
+- Comparison of Zero-Shot and Few-Shot Prompting
+- Understanding Chain of Thought prompts
+- Developing Tree of Thought prompts
+
+### 6. LangGraph
+- Chains vs Graphs
+- State
+- Cycles
+- Tool Calling Agents
+- Streaming
+
+## Repository Contents
+
+### Notebooks (webinar progression)
+- `1. Generative Models.ipynb` - direct OpenAI usage, HuggingFace pipelines, and model basics
+- `2. LangChain.ipynb` - LCEL chains, prompts, tools, SQL, and message history
+- `3. Information Processing.ipynb` - summarization, extraction, and text splitting workflows
+- `4. ChatBots.ipynb` - retrieval, vector stores, and chatbot pipeline construction
+- `5. Prompt Engineering.ipynb` - zero-shot, few-shot, and chain-of-thought prompting
+- `6. LangGraph.ipynb` - graph-based agents, state, cycles, and streaming
+
+
+### Slides
+- `slides/LangChain.pdf`
+
+### Data and assets
+- `data/Northwind_small.sqlite`
+- `data/trump.csv`
+- `data/pg43548-h.zip`
+- `images/` (generated output images)
+- `d4sci.mplstyle` (custom notebook plotting style)
+
+## Environment Setup
+
+### Requirements
+- Python `>=3.13`
+- `uv` (recommended) or `pip`
+
+### Install dependencies (uv)
+```bash
+uv sync
+```
+
+### Install dependencies (pip fallback)
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+### Run notebooks (from project root)
+```bash
+jupyter lab
+```
+
+## Core Dependencies
+
+Key libraries used in this repo include:
+- `langchain`, `langchain-core`, `langchain-community`
+- `langchain-openai`, `langchain-anthropic`, `langchain-huggingface`
+- `langgraph`
+- `chromadb`, `sentence-transformers`
+- `transformers`, `torch`
+- `jupyter`, `pandas`, `matplotlib`
+- `duckduckgo-search`
+
+## Author
+
+<table border="0">
+ <tr>
+	<td>
+	  <img src="data/bgoncalves.png" alt="Bruno Gonçalves" width="150" height="150" style="border-radius: 50%; object-fit: cover;">
+	</td>
+	<td>
+	  <h2>Bruno Gonçalves</h2>
+	  <h3>Data For Science, Inc.</h3>
+	  <p>
+			Web: <a href="http://www.data4sci.com/">www.data4sci.com</a><br>
+			Twitter/X: <a href="https://twitter.com/bgoncalves">@bgoncalves</a><br>
+			LinkedIn: <a href="https://www.linkedin.com/in/bmtgoncalves/">@bmtgoncalves</a><br>
+			Email: <a href="info@data4sci.com">info@data4sci.com</a><br>
+			Schedule a Call: <a href="https://data4sci.com/call">https://data4sci.com/call</a>
+	  </p>
+	</td>
+ </tr>
+</table>
